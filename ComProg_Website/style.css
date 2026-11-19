@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: 'hanana';
+    src: url(Fonts/Hanana.ttf) format('truetype');
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(Coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    inset: -15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(Coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 0;
+}
+
+.navbar{
+    width: 100%;
+    max-width: 1400px;
+    min-height: 110px;
+    margin: auto;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+}
+
+.icon{
+    justify-self: start;
+    max-width: 240px;
+}
+
+.logo{
+    color: #fffada;
+    font-size: 60px;
+    line-height: 1.1;
+    font-family: 'hanana';
+}
+
+.menu{
+    justify-self: center;
+    height: auto;
+    padding-top: 12px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    font-size: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fffada;
+    font-family: 'hanana';
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.4s ease-in-out;
+}
+
+.content {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 60px 30px 40px 120px;
+  box-sizing: border-box;
+  color: #fffada;
+  position: relative;
+  z-index: 1;
+}
+
+.content h1 {
+  font-family: 'hanana';
+  font-size: 100px;
+  line-height: .8;
+}
+
+.content span {
+  color: #a37138;
+}
+
+.content .par {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #a37138;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content .cn a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fffada;
+}
